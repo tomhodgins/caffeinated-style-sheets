@@ -31,7 +31,7 @@ The idea of Caffeinated Style Sheets, or writing CSS that's extended by JavaScri
 
 This is all about keeping your CSS in CSS and your Javascript in JavaScript, but finding ways to write CSS and JavaScript that compliment each other and make advanced styling techniques effortless.
 
-### Writing Custom at-rules in CSS
+### Writing Custom At-rules in CSS
 
 You can invent custom at-rules in valid CSS syntax by extending [`@supports () {}`](https://drafts.csswg.org/css-conditional-3/#at-supports) using a custom identifier like `--custom()` or `--example()`, and if you have arguments to pass into the function to encode them as something [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) can read to maximum compatibility and simplicity. This is useful for polyfilling at-rules coming to CSS like `@document`, as well as inventing your own queries, like element queries or container queries.
 
@@ -53,7 +53,7 @@ custom("arg1", 2, {"arg": 3}, `
 `)
 ```
 
-### Writing Custom selectors in CSS
+### Writing Custom Selectors in CSS
 
 CSS syntax also includes the ability for us to invent any attribute selector we want, so if we invent a custom attriute selector like [`[--custom]`](https://drafts.csswg.org/selectors-4/#attribute-selectors) we can be sure that will never match anything in HTML. If we have arguments to pass into the function we can encode them in a format `JSON.parse()` and read and extract that with JavaScript later. In this example it wouldn't be hard to read this and extract `custom("div", "arg1", 2, {"arg": 3})` to run with a JavaScript function named `custom()`:
 
@@ -82,7 +82,7 @@ or in HTML:
 <div style='--custom: ["arg1", 2, {"arg": 3}];'></div>
 ```
 
-### Slides to the “Caffeinated Style Sheets” talk
+### Slides to the “Caffeinated Style Sheets” Talk
 
 - [Slides to “Caffeinated Style Sheets”](https://tomhodgins.com/caffeinated-style-sheets.pdf) given at [FITC WebUnleashed 2018](https://fitc.ca/presentation/caffeinated-style-sheets-extending-css-with-javascript/)
 
@@ -107,9 +107,9 @@ or in HTML:
 - [deqaf](https://github.com/tomhodgins/deqaf) (parse CSSOM client-side)
 - [qaffeine](https://github.com/tomhodgins/qaffeine) (parse `.css` files server-side)
 
-### Plugins compatible with jsincss, deqaf, and qaffeine
+### Plugins Compatible with `jsincss`, `deqaf`, and `qaffeine`
 
-### Custom at-rule plugins
+### Custom At-rule Plugins
 
 - [jsincss-viewport](https://github.com/tomhodgins/jsincss-viewport)
 - [jsincss-overflow](https://github.com/tomhodgins/jsincss-overflow)
@@ -121,7 +121,7 @@ or in HTML:
 - [`localStorage` and `sessionStorage` queries](https://codepen.io/tomhodgins/pen/XoMYwy)
 - [date queries](https://codepen.io/tomhodgins/pen/yGMqgR)
 
-### Custom selector plugins
+### Custom Selector Plugins
 
 - [jsincss-parent-selector](https://github.com/tomhodgins/jsincss-parent-selector)
 - [jsincss-has-selector](https://github.com/tomhodgins/jsincss-has-selector)
@@ -139,7 +139,7 @@ or in HTML:
 - [not-blank valid/invalid selector](https://codepen.io/tomhodgins/pen/JevNPb)
 - [compare attribute values as numbers](https://codepen.io/tomhodgins/pen/EGKJqx)
 
-### Utilities for building plugins
+### Utilities for Building Plugins
 
 - [parse-css-stylesheet](https://github.com/tomhodgins/parse-css-stylesheet)
 - [parse-css-rule](https://github.com/tomhodgins/parse-css-rule)
