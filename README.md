@@ -107,6 +107,17 @@ or in HTML:
 - [deqaf](https://github.com/tomhodgins/deqaf) (parse CSSOM client-side)
 - [qaffeine](https://github.com/tomhodgins/qaffeine) (parse `.css` files server-side)
 
+### Building Blocks for CSS Tooling
+
+- [parse-css-stylesheet](https://github.com/tomhodgins/parse-css-stylesheet)
+- [parse-css-rule](https://github.com/tomhodgins/parse-css-rule)
+- [process-css-rules](https://github.com/tomhodgins/process-css-rules)
+- [stringify-css-stylesheet](https://github.com/tomhodgins/stringify-css-stylesheet)
+- [stringify-css-rule](https://github.com/tomhodgins/stringify-css-rule)
+- [css-polyfill-patterns](https://github.com/tomhodgins/css-polyfill-patterns)
+- [element-query-tests](https://github.com/tomhodgins/element-query-tests)
+- [element-unit-tests](https://github.com/tomhodgins/element-unit-tests)
+
 ### Plugins Compatible with `jsincss`, `deqaf`, and `qaffeine`
 
 ### Custom At-rule Plugins
@@ -138,16 +149,6 @@ or in HTML:
 - [playing, paused, muted, and current-time pseudo-classes for `<video>` and `<audio>`](https://codepen.io/tomhodgins/pen/aRWqro)
 - [not-blank valid/invalid selector](https://codepen.io/tomhodgins/pen/JevNPb)
 - [compare attribute values as numbers](https://codepen.io/tomhodgins/pen/EGKJqx)
-
-### Utilities for Building Plugins
-
-- [parse-css-stylesheet](https://github.com/tomhodgins/parse-css-stylesheet)
-- [parse-css-rule](https://github.com/tomhodgins/parse-css-rule)
-- [stringify-css-stylesheet](https://github.com/tomhodgins/stringify-css-stylesheet)
-- [stringify-css-rule](https://github.com/tomhodgins/stringify-css-rule)
-- [css-polyfill-patterns](https://github.com/tomhodgins/css-polyfill-patterns)
-- [element-query-tests](https://github.com/tomhodgins/element-query-tests)
-- [element-unit-tests](https://github.com/tomhodgins/element-unit-tests)
 
 ## Videos
 
