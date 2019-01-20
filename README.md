@@ -53,6 +53,8 @@ custom("arg1", 2, {"arg": 3}, `
 `)
 ```
 
+> Read more about writing custom at-rules in the [deqaf readme](https://github.com/tomhodgins/deqaf#writing-extended-supports-rules-for-js-powered-at-rules)
+
 ### Writing Custom Selectors in CSS
 
 CSS syntax also includes the ability for us to invent any attribute selector we want, so if we invent a custom attriute selector like [`[--custom]`](https://drafts.csswg.org/selectors-4/#attribute-selectors) we can be sure that will never match anything in HTML. If we have arguments to pass into the function we can encode them in a format `JSON.parse()` and read and extract that with JavaScript later. In this example it wouldn't be hard to read this and extract `custom("div", "arg1", 2, {"arg": 3})` to run with a JavaScript function named `custom()`:
@@ -63,7 +65,9 @@ div[--custom='"arg1", 2, {"arg": 3}'] {
 }
 ```
 
-## Writing Custom Properties in CSS
+> Read more about writing custom selector in the [deqaf readme](https://github.com/tomhodgins/deqaf#writing-extended-selectors-for-js-powered-rules)
+
+### Writing Custom Properties in CSS
 
 CSS already includes the ability for us to define [custom properties](https://drafts.csswg.org/css-variables/) as long as we start the name with a double-dash `--` to ensure it never collides with any future CSS property. What's great about custom properties (aka css variables) in CSS is that they can be defined and set in CSSOM (css stylesheets) or in DOM (html `style=""` attribute), and can be read and written from JavaScript. This makes them an amazing way for JavaScript functions to supply values to CSS that it can use for styling:
 
@@ -76,6 +80,8 @@ div {
 }
 ```
 
+> Read more about some ways you can use the `computed-variables` to write JS-powered CSS custom properties in the [computed-variables readme](https://github.com/tomhodgins/computed-variables#usage)
+
 or in HTML: 
 
 ```html
@@ -84,7 +90,7 @@ or in HTML:
 
 ### Slides to the “Caffeinated Style Sheets” Talk
 
-- [Slides to “Caffeinated Style Sheets”](https://tomhodgins.com/caffeinated-style-sheets.pdf) given at [FITC WebUnleashed 2018](https://fitc.ca/presentation/caffeinated-style-sheets-extending-css-with-javascript/)
+- [Slides to “Caffeinated Style Sheets”](https://tomhodgins.com/caffeinated-style-sheets.pdf) given at [FITC Web Unleashed 2018](https://fitc.ca/presentation/caffeinated-style-sheets-extending-css-with-javascript/)
 
 ## Demos
 
