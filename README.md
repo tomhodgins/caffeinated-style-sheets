@@ -120,7 +120,7 @@ or in HTML:
 
 ### Plugins Compatible with `jsincss`, `deqaf`, and `qaffeine`
 
-### Custom At-rule Plugins
+#### Custom At-rule Plugins
 
 - [jsincss-viewport](https://github.com/tomhodgins/jsincss-viewport)
 - [jsincss-overflow](https://github.com/tomhodgins/jsincss-overflow)
@@ -132,7 +132,7 @@ or in HTML:
 - [`localStorage` and `sessionStorage` queries](https://codepen.io/tomhodgins/pen/XoMYwy)
 - [date queries](https://codepen.io/tomhodgins/pen/yGMqgR)
 
-### Custom Selector Plugins
+#### Custom Selector Plugins
 
 - [jsincss-parent-selector](https://github.com/tomhodgins/jsincss-parent-selector)
 - [jsincss-has-selector](https://github.com/tomhodgins/jsincss-has-selector)
